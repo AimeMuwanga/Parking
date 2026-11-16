@@ -25,3 +25,27 @@
 
 # Generated ML-Agents profiler data
 Assets/ML-Agents/Timers/
+
+# Keep only curated TensorBoard comparison data in the repository
+results/*
+!results/training-comparison.png
+!results/parking_02/
+!results/parking_03/
+
+results/parking_02/*
+!results/parking_02/configuration.yaml
+!results/parking_02/Parking/
+!results/parking_02/run_logs/
+results/parking_02/Parking/*
+!results/parking_02/Parking/events.out.tfevents.*
+results/parking_02/run_logs/*
+!results/parking_02/run_logs/training_status.json
+
+results/parking_03/*
+!results/parking_03/configuration.yaml
+!results/parking_03/Parking/
+!results/parking_03/run_logs/
+results/parking_03/Parking/*
+!results/parking_03/Parking/events.out.tfevents.*
+results/parking_03/run_logs/*
+!results/parking_03/run_logs/training_status.json

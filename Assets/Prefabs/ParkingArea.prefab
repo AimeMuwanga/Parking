@@ -3759,7 +3759,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 5022602860645237092, guid: 69aad8b59ca69b04893f2e4e72e38886, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: Parking
   TeamId: 0
   m_UseChildSensors: 1

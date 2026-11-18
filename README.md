@@ -24,6 +24,8 @@ tensorboard --logdir results
 
 The committed `results` comparison data contains TensorBoard event files and run configurations; generated checkpoints are excluded.
 
+At each episode reset, the target is uniformly selected from three empty bays: the original center bay or a bay 6.4 m to either side. The parked cars remain obstacles. The recorded `parking_02` and `parking_03` comparison runs used the original fixed target, so retrain before presenting performance on randomized targets.
+
 ## Recorded comparison
 
 - `parking_02`: 256 hidden units, 2 layers, 1,640,000 steps.

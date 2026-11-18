@@ -27,6 +27,10 @@ public class ParkingAgent : Agent
     public Vector3 startLocalPos = new Vector3(0f, 0.5f, -4f);
     public float startYaw = 0f;
 
+    [Header("Target variation")]
+    public bool randomizeTargetPosition = true;
+    public float sideTargetOffset = 6.4f;
+
     [Header("Success")]
     public float positionTolerance = 0.6f;   // metres from the centre of the spot
     public float angleTolerance = 10f;       // degrees (head-in or reversed both count)
@@ -42,16 +46,22 @@ public class ParkingAgent : Agent
     float speed;
     float steerInput;
     float prevPotential;
+    Vector3 initialTargetLocalPosition;
     const float LotScale = 20f;   // used to normalise distances
 
     public override void Initialize()
     {
         rb = GetComponent<Rigidbody>();
         if (area == null) area = transform.parent;
+        initialTargetLocalPosition = area.InverseTransformPoint(target.position);
     }
 
     public override void OnEpisodeBegin()
     {
+        int targetLane = randomizeTargetPosition ? Random.Range(-1, 2) : 0;
+        Vector3 targetOffset = Vector3.right * (targetLane * sideTargetOffset);
+        target.position = area.TransformPoint(initialTargetLocalPosition + targetOffset);
+
         speed = 0f;
         steerInput = 0f;
 

@@ -3783,6 +3783,8 @@ MonoBehaviour:
   MaxStep: 2000
   area: {fileID: 470809520859648657}
   target: {fileID: 2177474661467211564}
+  randomizeTargetPosition: 1
+  sideTargetOffset: 6.4
   maxSpeed: 6
   maxReverseSpeed: 3
   acceleration: 6

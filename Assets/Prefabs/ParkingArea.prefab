@@ -3757,9 +3757,9 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 69aad8b59ca69b04893f2e4e72e38886, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 170ed962d883f1e4ca1d6fe5165ce3c0, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 0
+  m_BehaviorType: 2
   m_BehaviorName: Parking
   TeamId: 0
   m_UseChildSensors: 1
@@ -3783,8 +3783,6 @@ MonoBehaviour:
   MaxStep: 2000
   area: {fileID: 470809520859648657}
   target: {fileID: 2177474661467211564}
-  randomizeTargetPosition: 1
-  sideTargetOffset: 6.4
   maxSpeed: 6
   maxReverseSpeed: 3
   acceleration: 6
@@ -3794,6 +3792,8 @@ MonoBehaviour:
   wheelBase: 2.6
   startLocalPos: {x: 0, y: 0.5, z: -4}
   startYaw: 0
+  randomizeTargetPosition: 1
+  sideTargetOffset: 6.4
   positionTolerance: 0.6
   angleTolerance: 10
   stopSpeed: 0.3

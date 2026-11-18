@@ -49,3 +49,15 @@ results/parking_03/Parking/*
 !results/parking_03/Parking/events.out.tfevents.*
 results/parking_03/run_logs/*
 !results/parking_03/run_logs/training_status.json
+
+
+!results/parking_04/
+results/parking_04/*
+!results/parking_04/configuration.yaml
+!results/parking_04/Parking/
+!results/parking_04/run_logs/
+results/parking_04/Parking/*
+!results/parking_04/Parking/events.out.tfevents.*
+results/parking_04/run_logs/*
+!results/parking_04/run_logs/training_status.json
+results/parking_04/Parking.onnx
